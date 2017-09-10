@@ -57,7 +57,7 @@ Do your best to follow these guidelines when writing code for Craft and Craft pl
 - Only use the `parent::` keyword when calling a parent method with the exact same name as the current method. Otherwise use `$this->`.
 - Always specify the visibility of class properties and methods (`public`, `protected`, or `private`).
 - Private class property/method names should begin with an underscore (`private $_foo`).
-- Don’t explicitly set class properties’ default values to `null` (e.g. `public $foo = null;`).
+- Don’t explicitly set class properties default values to `null` (e.g. `public $foo = null;`).
 - Always use `require` or `include` when including a file that returns something, rather than `require_once` or `include_once`.
 - Use `strpos($foo, $bar) === 0` rather than `strncmp($foo, $bar, $barLength) === 0` when checking if one string begins with another string, for short strings.
 - Use `$str === ''` rather than `strlen($str) === 0` when checking if a string is empty.
